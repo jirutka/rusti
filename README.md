@@ -28,9 +28,9 @@ Currently, it **must** be built using a nightly release of the Rust compiler.
 Nightly releases can be found at the bottom of the
 [Rust install page](http://www.rust-lang.org/install.html)
 or installed using the `--channel=nightly` option to
-[rustup](https://github.com/rust-lang/rustup).
+[rustup.sh](https://github.com/rust-lang/rustup).
 
-For users of stable or beta, [multirust](https://github.com/brson/multirust)
+For users of stable or beta, [rustup.rs](https://github.com/rust-lang-nursery/rustup.rs)
 can be used to maintain multiple concurrent Rust installs.
 
 ### Installation using Cargo
@@ -41,19 +41,19 @@ operating system equivalent.
 
     cargo install --git https://github.com/murarth/rusti
 
-If you are using `multirust`, that command will look like this:
+If you are using `rustup.rs`, that command will look like this:
 
     # update to the latest nightly version
-    multirust update nightly
-    multirust run nightly cargo install --git https://github.com/murarth/rusti
+    rustup update nightly
+    rustup run nightly cargo install --git https://github.com/murarth/rusti
 
 
 ### Building from a Git clone
 
-If using [multirust](https://github.com/brson/multirust), the following command
+If using [rustup.rs](https://github.com/rust-lang-nursery/rustup.rs), the following command
 will create an override to use the nightly branch within the `rusti` source tree:
 
-    multirust override nightly
+    rustup override nightly
 
 Build with Cargo:
 
